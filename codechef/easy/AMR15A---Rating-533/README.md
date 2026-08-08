@@ -118,7 +118,7 @@ NOT READY
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-08T18:36:37.279Z  
+**Submitted:** 2026-08-08T18:37:00.220Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
