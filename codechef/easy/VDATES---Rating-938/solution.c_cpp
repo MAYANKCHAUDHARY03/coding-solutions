@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int d, l, r;
+	    cin>>d >> l>> r;
+	    if(l>d){
+	        cout<<"Too Early\n";
+	    }
+	    else if(d>r){
+	        cout<<"Too Late\n";
+	    }
+	    else{
+	        cout<<"Take Second Dose Now\n";
+	    }
+	}
+
+}
