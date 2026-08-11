@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>> t;
+	while(t--){
+	    int n;
+	    cin>> n;
+	    if(n <=100){
+	        cout<<n<<endl;
+	    }
+	    else if(100< n <=1000){
+	        n-=25;
+	        cout<<n<<endl;
+	    }
+	    else if(1000< n <=5000){
+	        n-=100;
+	        cout<<n<<endl;
+	    }
+	    else if(n >5000){
+	        n-=500;
+	        cout<<n<<endl;
+	    }
+	}
+
+}
