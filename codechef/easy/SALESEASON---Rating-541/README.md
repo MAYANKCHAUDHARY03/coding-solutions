@@ -57,7 +57,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T17:27:51.766Z  
+**Submitted:** 2026-08-11T17:28:44.149Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -72,11 +72,11 @@ int main() {
 	    if(n <=100){
 	        cout<<n<<endl;
 	    }
-	    else if(100< n <=1000){
+	    else if(n <=1000){
 	        n-=25;
 	        cout<<n<<endl;
 	    }
-	    else if(1000< n <=5000){
+	    else if(n <=5000){
 	        n-=100;
 	        cout<<n<<endl;
 	    }
