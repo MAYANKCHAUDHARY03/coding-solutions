@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T18:35:50.885Z  
+**Submitted:** 2026-08-13T18:42:03.573Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -69,23 +69,20 @@ cin>>t;
 while(t--){
     int n, x;
     cin>>n>> x;
-    if(n>x){
-        if((n - x) < 4){
-            cout<< (n-x)<< endl;
-        }
-        else{
-            if((n - x)% 4 == 0){
-    cout<<(n - x) / 4<<endl;}
-            else{
-                cout<<(n - x) % 4<<endl;
-            }
-        }}
-    else{
-        cout<<"0"<<endl;
-    }
+    if(n<= x){
+        cout<< "0\n";
+}
+else if((n-x)%4 == 0){
+    cout<<(n-x)/4<<endl;
+}
+else if(((n-x)/4) < 4){
+    cout<<(n-x)%4<<endl;
+}
+else{
+    cout<<(n-x)/4<<endl;
 }
 }
-
+}
 ```
 
 ---
