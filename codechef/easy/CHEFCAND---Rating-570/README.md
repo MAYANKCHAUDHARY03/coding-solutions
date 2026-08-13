@@ -56,32 +56,29 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T18:42:03.573Z  
+**Submitted:** 2026-08-13T18:45:10.334Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-while(t--){
-    int n, x;
-    cin>>n>> x;
-    if(n<= x){
-        cout<< "0\n";
-}
-else if((n-x)%4 == 0){
-    cout<<(n-x)/4<<endl;
-}
-else if(((n-x)/4) < 4){
-    cout<<(n-x)%4<<endl;
-}
-else{
-    cout<<(n-x)/4<<endl;
-}
-}
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, x;
+        cin >> n >> x;
+        if (n <= x) {
+            cout << "0\n";
+        }
+        else {
+            int c = n - x;
+            int d = (c + 3) / 4;
+            cout << d << endl;
+        }
+    }
 }
 ```
 
