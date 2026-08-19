@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:10:28.926Z  
+**Submitted:** 2026-08-19T15:15:18.636Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -68,18 +68,17 @@ int main() {
     while (t--) {
         int n, x = 0, y = 0;
         cin >> n;
-        int a[100];
         for (int i = 0; i < n; i++) {
-            int x;
-            cin >> x;
-            if (x % 2) {
+            int z;
+            cin >> z;
+            if (z % 2) {
                 x++;
             }
             else {
                 y++;
             }
         }
-        cout << min(n, 2 * (min(x, y)) + 1) << endl;
+        cout << min(n, 2 * (min(x, y))+1) << endl;
     }
 }
 ```
