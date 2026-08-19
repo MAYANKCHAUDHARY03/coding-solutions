@@ -54,34 +54,34 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:07:36.977Z  
+**Submitted:** 2026-08-19T15:10:28.926Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>> t;
-while(t--){
-    int n, odd=0, even=0;
-    cin>> n;
-    int a[100];
-    for(int i=0; i<n; i++){
-        int x;
-        cin>> x;
-        if(x%2){
-            odd++;
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, x = 0, y = 0;
+        cin >> n;
+        int a[100];
+        for (int i = 0; i < n; i++) {
+            int x;
+            cin >> x;
+            if (x % 2) {
+                x++;
+            }
+            else {
+                y++;
+            }
         }
-        else{
-            even++
-        }
+        cout << min(n, 2 * (min(x, y)) + 1) << endl;
     }
-    cout<< min(n, 2*(min(odd, even))+1)<<endl;
 }
-}
-
 ```
 
 ---
