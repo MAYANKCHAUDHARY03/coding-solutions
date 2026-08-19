@@ -9,17 +9,16 @@ int main() {
     while (t--) {
         int n, x = 0, y = 0;
         cin >> n;
-        int a[100];
         for (int i = 0; i < n; i++) {
-            int x;
-            cin >> x;
-            if (x % 2) {
+            int z;
+            cin >> z;
+            if (z % 2) {
                 x++;
             }
             else {
                 y++;
             }
         }
-        cout << min(n, 2 * (min(x, y)) + 1) << endl;
+        cout << min(n, 2 * (min(x, y))+1) << endl;
     }
 }
