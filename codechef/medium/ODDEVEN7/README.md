@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T14:55:39.980Z  
+**Submitted:** 2026-08-19T15:07:36.977Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -62,7 +62,24 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+int t;
+cin>> t;
+while(t--){
+    int n, odd=0, even=0;
+    cin>> n;
+    int a[100];
+    for(int i=0; i<n; i++){
+        int x;
+        cin>> x;
+        if(x%2){
+            odd++;
+        }
+        else{
+            even++
+        }
+    }
+    cout<< min(n, 2*(min(odd, even))+1)<<endl;
+}
 }
 
 ```
