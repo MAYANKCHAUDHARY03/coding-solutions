@@ -62,38 +62,27 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T13:48:14.267Z  
+**Submitted:** 2026-08-19T13:50:27.297Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>> t;
-while(t--){
-    int a, b, c;
-    cin>> a>> b>> c;
-    if(a > b){
-        if(c > a){
-        cout<< "NO\n";
-    }
-    else{
-        cout<<"YES\n";
-    }
-    }
-    else{
-        if(c > b){
-        cout<< "NO\n";
-    }
-    else{
-        cout<<"YES\n";
-    }
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int a, b, c;
+        cin >> a >> b >> c;
+        if (a <= b && c <= b) {
+            cout << "YES\n";
+        } else {
+            cout << "NO\n";
+        }
     }
 }
-}
-
 ```
 
 ---
