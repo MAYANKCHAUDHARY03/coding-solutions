@@ -59,7 +59,7 @@ Chef scored $300$ points while the cutoff was $361$, hence he failed to get a go
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:27:56.801Z  
+**Submitted:** 2026-08-19T15:28:09.437Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
