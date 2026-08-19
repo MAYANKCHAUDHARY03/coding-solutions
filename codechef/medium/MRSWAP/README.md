@@ -56,31 +56,31 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T14:46:39.225Z  
+**Submitted:** 2026-08-19T14:51:21.072Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>> t;
-while(t--){
-    int n;
-    cin >> n;
-    int a[100];
-    for(int i=0; i<(2*n); i++){
-        cin>> a[i];
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        int a[100];
+        for (int i = 0; i < (2 * n); i++) {
+            cin >> a[i];
+        }
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += max(a[i], a[(2 * n) - 1 - i]);
+        }
+        cout << sum << endl;
     }
-    int sum = 0;
-    for(int i=0; i<n; i++){
-        sum+= max(a[i], a[(2*n)-1-i]);
-    }
-    cout<<sum<<endl;
 }
-}
-
 ```
 
 ---
