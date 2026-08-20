@@ -61,7 +61,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T17:31:45.951Z  
+**Submitted:** 2026-08-17T17:30:00.613Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -74,7 +74,7 @@ cin>> t;
 while(t--){
     int p, q, r, s;
     cin>> p>> q>> r>> s;
-    if((p > (q+r+s)) || (r > (q+p+s)) || (q > (p+r+s)) || (s > (q+r+p))){
+    if((p > (q+r+s)) || (r > (q+p+s)) || (q >= (p+r+s)) || (s >= (q+r+p))){
         cout<<"YES\n";
     }
     else{
