@@ -8,7 +8,7 @@ cin>> t;
 while(t--){
     int p, q, r, s;
     cin>> p>> q>> r>> s;
-    if((p > (q+r+s)) || (r > (q+p+s)) || (q > (p+r+s)) || (s > (q+r+p))){
+    if((p > (q+r+s)) || (r > (q+p+s)) || (q >= (p+r+s)) || (s >= (q+r+p))){
         cout<<"YES\n";
     }
     else{
