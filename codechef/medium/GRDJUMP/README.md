@@ -65,7 +65,7 @@ For the given costs, this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T14:54:40.408Z  
+**Submitted:** 2026-08-26T15:01:38.398Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -78,7 +78,7 @@ int main() {
     cin >> t;
     while (t--) {
         int a, b, p, q, r;
-cin>> a, b;
+        cin >> a>> b>>p>>q>>r;
 
     }
 }
