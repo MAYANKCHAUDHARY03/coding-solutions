@@ -65,30 +65,28 @@ However, it's still optimal to buy only the first item rather than buy any two o
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T14:43:49.026Z  
+**Submitted:** 2026-08-26T14:44:52.372Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
-
 int main() {
-	// your code goes here
-int t;
-cin>> t;
-while(t--){
-    int n;
-    cin>> n;
-    int x=0, y=0;
-    while(n--){
-        int c;
-        cin>> c;
-        x=max(y, x+c);
-        x= max(x,c);
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        int x = 0, y = 0;
+        while (n--) {
+            int c;
+            cin >> c;
+            x = max(y, x + c);
+            y = max(x, c);
+        }
+        cout << y << endl;
     }
-    cout<<y<<endl;
 }
-}
-
 ```
 
 ---
