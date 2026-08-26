@@ -65,10 +65,11 @@ However, it's still optimal to buy only the first item rather than buy any two o
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T14:50:14.003Z  
+**Submitted:** 2026-08-26T14:50:37.006Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 int main() {
     // your code goes here
@@ -78,18 +79,19 @@ int main() {
         int n;
         cin >> n;
         int a[100];
-        for(int i=0; i<n; i++){
-            cin>> a[i];
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
         }
-        int x=0;
-        for(int i=0; i<n; i++){
-            x=max(x, a[i]);
-            for(int j= i+1; j<n; j++){
-                if(a[i]<=a[j]){
-                    x= max(x, a[i] +a[j]);
+        int x = 0;
+        for (int i = 0; i < n; i++) {
+            x = max(x, a[i]);
+            for (int j = i + 1; j < n; j++) {
+                if (a[i] <= a[j]) {
+                    x = max(x, a[i] + a[j]);
                 }
             }
         }
+        cout<< x<<endl;
     }
 }
 ```
