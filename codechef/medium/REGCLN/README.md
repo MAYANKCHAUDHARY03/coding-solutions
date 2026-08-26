@@ -80,7 +80,7 @@ Today is day $49$. The next deep cleaning will be on day $50$, so the answer is 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T14:36:20.549Z  
+**Submitted:** 2026-08-26T14:36:29.292Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
