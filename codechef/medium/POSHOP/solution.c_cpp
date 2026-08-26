@@ -1,20 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int main() {
-	// your code goes here
-int t;
-cin>> t;
-while(t--){
-    int n;
-    cin>> n;
-    int x=0, y=0;
-    while(n--){
-        int c;
-        cin>> c;
-        x=max(y, x+c);
-        x= max(x,c);
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        int x = 0, y = 0;
+        while (n--) {
+            int c;
+            cin >> c;
+            x = max(y, x + c);
+            y = max(x, c);
+        }
+        cout << y << endl;
     }
-    cout<<y<<endl;
-}
 }
