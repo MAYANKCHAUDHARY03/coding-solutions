@@ -65,7 +65,7 @@ For the given costs, this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T15:15:23.471Z  
+**Submitted:** 2026-08-26T15:18:12.549Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,7 +79,7 @@ int main() {
     while (t--) {
         int a, b, p, q, r;
         cin >> a >> b >> p >> q >> r;
-        int k = 100;
+        int k = 1000000;
         for (int i = 0; i <= min(a, b); i++) {
             int x = a - i;
             int y = b - i;
