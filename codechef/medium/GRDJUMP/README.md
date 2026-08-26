@@ -65,7 +65,7 @@ For the given costs, this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T14:52:24.397Z  
+**Submitted:** 2026-08-26T14:54:16.404Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -73,7 +73,12 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+int t;
+cin>> t;
+while(t--){
+    int a, b, p,q,r;
+    
+}
 }
 
 ```
