@@ -14,9 +14,10 @@ int main() {
             int x = a - i;
             int y = b - i;
             int z = i * r;
-            z+=((x+1)/2)*p;
-            z+=((y+1)/2)*q;
-            k=min(k,z);}
-            cout<<k<<endl;
+            z += ((x + 1) / 2) * p;
+            z += ((y + 1) / 2) * q;
+            k = min(k, z);
+        }
+        cout << k << endl;
     }
 }
