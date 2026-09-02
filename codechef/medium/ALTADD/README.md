@@ -66,7 +66,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:57:49.069Z  
+**Submitted:** 2026-09-02T15:04:14.058Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,10 +79,17 @@ cin>> t;
 while(t--){
     int n;
     cin>> n;
-    int a[1000000002];
+    long long a, b=0, c=0;
     for(int i=0;i<n;i++){
-        cin >> a[i];
+        cin>>a;
+        if(i%2){
+            a= -a;
+        }
+        ans += abs(a-b);
+        b=a;
     }
+    c+=abs(b);
+    cout<<c/2<<endl;
 }
 }
 
