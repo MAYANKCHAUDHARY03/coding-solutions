@@ -51,26 +51,42 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:46:12.631Z  
+**Submitted:** 2026-09-02T14:52:06.921Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>> t;
-while(t--){
-    int n, k;
-    cin>> n>> k;
-    for(int i; i<n; i++){
-        int a[n];
-        cin>> a[i];
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
+        int a[100];
+        int sum=0;
+        for (int i; i < n; i++) {
+            cin >> a[i];
+            sum+=a[i];
+        }
+        int result=0;
+        for(int x=0; x<=k;x++){
+            int del=0;
+            for(int i=0;i<x;i++){
+                del+=a[i];
+            }
+            for(int i=n-(k-x);i<n;i++){
+                del+=a[i];
+            }
+            if(sum -del > result){
+                result=sum-del;
+            }
+        }
+        cout<<result<<endl;
     }
 }
-}
-
 ```
 
 ---
