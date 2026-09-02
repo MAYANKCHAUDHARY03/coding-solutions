@@ -6,6 +6,11 @@ int main() {
 int t;
 cin>> t;
 while(t--){
-    
+    int n, k;
+    cin>> n>> k;
+    for(int i; i<n; i++){
+        int a[n];
+        cin>> a[i];
+    }
 }
 }
