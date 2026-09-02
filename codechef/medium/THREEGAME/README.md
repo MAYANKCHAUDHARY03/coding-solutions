@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:46:59.761Z  
+**Submitted:** 2026-09-02T15:47:34.562Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -72,12 +72,12 @@ int main() {
         cin >> n;
         long long result;
         if (n % 2 == 0) {
-            cout << 3*(n/2)+1 << endl;
+           result= 3 * (n / 2) + 1;
         }
-        else{
-            result=(3*(n-1))/2;
+        else {
+            result = (3 * (n - 1)) / 2;
         }
-        cout<<result<<endl;
+        cout << result << endl;
     }
 }
 ```
