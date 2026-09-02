@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:37:52.375Z  
+**Submitted:** 2026-09-02T15:39:26.099Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,14 +70,14 @@ int main() {
     while (t--) {
         long long n;
         cin >> n;
-        if (n % 3 == 0) {
-            cout << n + 1 << endl;
+        if (n % 3 == 2) {
+            cout << n + 2 << endl;
         }
         else if (n % 3 == 1) {
             cout << n << endl;
         }
         else {
-            cout << n + 2 << endl;
+            cout << n + 1 << endl;
         }
     }
 }
