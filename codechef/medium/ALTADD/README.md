@@ -66,7 +66,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:54:34.078Z  
+**Submitted:** 2026-09-02T14:57:49.069Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -74,7 +74,16 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+int t;
+cin>> t;
+while(t--){
+    int n;
+    cin>> n;
+    int a[1000000002];
+    for(int i=0;i<n;i++){
+        cin >> a[i];
+    }
+}
 }
 
 ```
