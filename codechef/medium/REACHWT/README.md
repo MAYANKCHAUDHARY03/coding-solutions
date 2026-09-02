@@ -52,26 +52,27 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:39:54.930Z  
+**Submitted:** 2026-09-02T14:40:25.927Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>> t;
-while(t--){
-    int n;
-    cin>> n;
-    if((n%2)==0){
-    cout<<(n/2)*30<<endl;
-}
-else{
-    cout<<((n/2)*30)+10<<endl;
-}
-}
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        if ((n % 2) == 0) {
+            cout << (n / 2) * 30 << endl;
+        }
+        else {
+            cout << (((n / 2) * 30) + 20) << endl;
+        }
+    }
 }
 ```
 
