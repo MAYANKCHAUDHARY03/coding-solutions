@@ -51,7 +51,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:43:06.643Z  
+**Submitted:** 2026-09-02T14:46:12.631Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -62,7 +62,12 @@ int main() {
 int t;
 cin>> t;
 while(t--){
-    
+    int n, k;
+    cin>> n>> k;
+    for(int i; i<n; i++){
+        int a[n];
+        cin>> a[i];
+    }
 }
 }
 
