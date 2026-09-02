@@ -54,36 +54,36 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:19:52.122Z  
+**Submitted:** 2026-09-02T15:20:07.123Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>> t;
-while(t--){
-    int n;
-    cin>> n;
-    int a[31]={};
-    int result=0;
-    for(int i=0;i<n;i++){
-        int x;
-        cin>>x;
-        int y=0;
-        while(x>1){
-            x/=2;
-            y++;
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        int a[31] = {};
+        int result = 0;
+        for (int i = 0; i < n; i++) {
+            int x;
+            cin >> x;
+            int y = 0;
+            while (x > 1) {
+                x /= 2;
+                y++;
+            }
+            a[y]++;
+            result = max(result, a[y]);
         }
-        a[y]++;
-        result=max(result, a[y]);
+        cout << result << endl;
     }
-    cout<<result<<endl;
 }
-}
-
 ```
 
 ---
