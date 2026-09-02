@@ -56,28 +56,31 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:27:29.769Z  
+**Submitted:** 2026-09-02T15:29:25.765Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-while(t--){
-    long long n;
-    cin>>n;
-    if(n%3==1){
-        cout<<n<<endl;
-    }
-    else{
-        cout<< n+1<<endl;
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        long long n;
+        cin >> n;
+        if (n % 3 == 0) {
+            cout << n+1 << endl;
+        }
+        else if(n%3==1){
+            cout<<n<<endl;
+        }
+        else {
+            cout << n + 1 << endl;
+        }
     }
 }
-}
-
 ```
 
 ---
