@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    // your code goes here
+    int x, y, f;
+    cin >> x >> y >> f;
+    if (x > (y + f)) {
+        cout << (12 * y) + f;
+    }
+    else {
+        cout << (12 * x);
+    }
+}
