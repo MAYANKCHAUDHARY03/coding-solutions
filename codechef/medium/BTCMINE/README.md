@@ -65,31 +65,23 @@ It can be verified that there's no way to make a positive profit by the end of t
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:09:46.835Z  
+**Submitted:** 2026-09-09T15:19:51.906Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-while(t--){
-    int x, y;
-    cin>> x>> y;
-    int a=0, b=0, c=0;
-    while(b<=0){
-        c++;
-        if(a==0 || x< (y*(2*a+1)){
-            a++;
+        // your code goes here
+        int t;
+        cin >> t;
+        while (t--) {
+            int x, y;
+            cin >> x >> y;
+            cout<< (x/y)+1<<endl;
+            }
         }
-        b+=(y*a*a-(a>0 && c<=a ? x:0));
-    }
-    cout<<c<<endl;
-}
-}
-
 ```
 
 ---
