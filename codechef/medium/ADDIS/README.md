@@ -77,7 +77,7 @@ It can be shown that this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:01:04.718Z  
+**Submitted:** 2026-09-09T15:01:36.857Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -93,21 +93,21 @@ int main() {
         cin >> n;
         int a[n];
         for (int i = 0; i < n; i++) {
-            cin >> a[i];}
-            sort(a, a + n);
-            int b = 1, c = 1;
-            for (int i = 1; i < n; i++) {
-                if (a[i] == a[i - 1]) {
-                    c++;
-                }
-                else {
-                    c = 1;
-                }
-                b = max(b, c);
-               
-            }
-              cout << (b + 1) / 2 << endl;
+            cin >> a[i];
         }
+        sort(a, a + n);
+        int b = 1, c = 1;
+        for (int i = 1; i < n; i++) {
+            if (a[i] == a[i - 1]) {
+                c++;
+            }
+            else {
+                c = 1;
+            }
+            b = max(b, c);
+
+        }
+        cout << (b + 1) / 2 << endl;
     }
 }
 ```
