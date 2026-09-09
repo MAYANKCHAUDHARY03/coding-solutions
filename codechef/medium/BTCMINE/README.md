@@ -65,7 +65,7 @@ It can be verified that there's no way to make a positive profit by the end of t
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:19:51.906Z  
+**Submitted:** 2026-09-09T15:23:09.803Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -73,15 +73,18 @@ It can be verified that there's no way to make a positive profit by the end of t
 using namespace std;
 
 int main() {
-        // your code goes here
-        int t;
-        cin >> t;
-        while (t--) {
-            int x, y;
-            cin >> x >> y;
-            cout<< (x/y)+1<<endl;
-            }
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int x, y;
+        cin >> x >> y;
+        for(int i=1; i<=200;i++){
+            int a=0;
+            bool b= false;
         }
+    }
+}
 ```
 
 ---
