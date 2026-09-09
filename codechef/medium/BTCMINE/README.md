@@ -65,7 +65,7 @@ It can be verified that there's no way to make a positive profit by the end of t
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:27:18.755Z  
+**Submitted:** 2026-09-09T15:29:15.801Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -82,17 +82,17 @@ int main() {
         for (int i = 1; i <= 200; i++) {
             int a = 0;
             bool b = false;
-            for(int j=1;j<=i;j++){
-                a+= j*j;
-                int c=y*(a+(i-j)*k*k);
-                int d=k*x;
-                if(c>d){
-                    b=true;
+            for (int j = 1; j <= i; j++) {
+                a += j * j;
+                int c = y * (a + (i - j) * j * j);
+                int d = j * x;
+                if (c > d) {
+                    b = true;
                     break;
                 }
             }
-            if(b){
-                cout<<i<<endl;
+            if (b) {
+                cout << i << endl;
                 break;
             }
         }
