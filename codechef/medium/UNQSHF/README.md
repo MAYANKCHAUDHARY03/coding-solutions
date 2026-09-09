@@ -74,42 +74,43 @@ So, no solution exists.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:39:33.738Z  
+**Submitted:** 2026-09-09T14:40:07.434Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>> t;
-while(t--){
-    int n;
-    cin>> n;
-    string a,b;
-    cin>> a>> b;
-    int c=0;
-    int d=0;
-    for(char e:a){
-        if(c=='a'){
-            c++;
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        string a, b;
+        cin >> a >> b;
+        int c = 0;
+        int d = 0;
+        for (char e: a) {
+            if (e == 'a') {
+                c++;
+            }
         }
-    }
-    for(char e:b){
-        if(c=='b'){
-            d++;
-        }}
-        if(c==d){
-            cout<<"YES\n";
+        for (char e: b) {
+            if (e == 'b') {
+                d++;
+            }
         }
-        else{
-            cout<<"NO\n";
+        if (c == d) {
+            cout << "YES\n";
         }
-    
-}
-}
+        else {
+            cout << "NO\n";
+        }
 
+    }
+}
 ```
 
 ---
