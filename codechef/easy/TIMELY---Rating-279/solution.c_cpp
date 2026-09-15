@@ -7,13 +7,13 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        int n;
-        cin >> n;
-        if (n < 67 || n > 45000) {
-            cout << "NO\n";
+        int x;
+        cin >> x;
+        if (x > 29) {
+            cout << "YES\n";
         }
         else {
-            cout << "YES\n";
+            cout << "NO\n";
         }
     }
 }
