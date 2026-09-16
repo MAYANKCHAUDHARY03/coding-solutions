@@ -55,28 +55,28 @@ Yes
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T14:50:16.065Z  
+**Submitted:** 2026-09-16T14:50:25.313Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-while(t--){
-    int n,k;
-    cin>>n>>k;
-    if(n-k==1){
-        cout<<"NO\n";
-    }
-    else{
-        cout<<"YES\n";
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
+        if (n - k == 1) {
+            cout << "NO\n";
+        }
+        else {
+            cout << "YES\n";
+        }
     }
 }
-}
-
 ```
 
 ---
