@@ -56,38 +56,38 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T15:04:54.583Z  
+**Submitted:** 2026-09-16T15:05:22.882Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-while(t--){
-    int n;
-    cin>>n;
-    long long a[200004], sum=0;
-    for (int i=0;i<n;i++){
-        cin>>a[i];
-        sum+=a[i];
-    }
-    sort(a, a+n);
-    long long red=0, ans=0;
-    for(int i=n-1; i>=n-n/2;i--){
-        red+=a[i];
-        int r=n-i;
-        long long value=red*(n-r)+(sum-red)*r;
-        if(value>ans){
-            ans=value;
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        long long a[200004], sum = 0;
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+            sum += a[i];
         }
+        sort(a, a + n);
+        long long red = 0, ans = 0;
+        for (int i = n - 1; i >= n - n / 2; i--) {
+            red += a[i];
+            int r = n - i;
+            long long value = red * (n - r) + (sum - red) * r;
+            if (value > ans) {
+                ans = value;
+            }
+        }
+        cout << ans << endl;
     }
-    cout<<ans<<endl;
 }
-}
-
 ```
 
 ---
