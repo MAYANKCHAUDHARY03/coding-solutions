@@ -58,7 +58,7 @@ Qualify
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T13:59:38.596Z  
+**Submitted:** 2026-09-18T14:00:17.340Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -72,10 +72,10 @@ while(t--){
     int x,a,b;
     cin>>x>>a>>b;
     if((2*b+a)>=x){
-        cout<<"QUALIFY\n";
+        cout<<"Qualify\n";
     }
     else{
-        cout<<"NOT QUALIFY\n";
+        cout<<"NotQualify\n";
     }
 }
 }
