@@ -9,10 +9,10 @@ while(t--){
     int x,a,b;
     cin>>x>>a>>b;
     if((2*b+a)>=x){
-        cout<<"QUALIFY\n";
+        cout<<"Qualify\n";
     }
     else{
-        cout<<"NOT QUALIFY\n";
+        cout<<"NotQualify\n";
     }
 }
 }
