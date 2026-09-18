@@ -65,7 +65,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T14:20:23.606Z  
+**Submitted:** 2026-09-18T14:21:21.036Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,8 +79,10 @@ int main() {
     while (t--) {
         int n, x, y;
         cin >> n >> x >> y;
-        if (y % x == 0) {
-            cout << "YES\n";
+        if (n * x >= y) {
+            if (y % x == 0) {
+                cout << "YES\n";
+            }
         }
         else {
             cout << "NO\n";
