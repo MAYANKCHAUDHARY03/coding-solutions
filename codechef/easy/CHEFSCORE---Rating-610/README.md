@@ -65,7 +65,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T14:21:21.036Z  
+**Submitted:** 2026-09-18T14:25:21.241Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -82,6 +82,9 @@ int main() {
         if (n * x >= y) {
             if (y % x == 0) {
                 cout << "YES\n";
+            }
+            else {
+                cout << "NO\n";
             }
         }
         else {
