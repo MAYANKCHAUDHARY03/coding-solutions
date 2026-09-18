@@ -9,8 +9,10 @@ int main() {
     while (t--) {
         int n, x, y;
         cin >> n >> x >> y;
-        if (y % x == 0) {
-            cout << "YES\n";
+        if (n * x >= y) {
+            if (y % x == 0) {
+                cout << "YES\n";
+            }
         }
         else {
             cout << "NO\n";
