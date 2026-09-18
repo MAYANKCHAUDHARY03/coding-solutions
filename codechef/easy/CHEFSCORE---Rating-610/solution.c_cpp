@@ -13,6 +13,9 @@ int main() {
             if (y % x == 0) {
                 cout << "YES\n";
             }
+            else {
+                cout << "NO\n";
+            }
         }
         else {
             cout << "NO\n";
