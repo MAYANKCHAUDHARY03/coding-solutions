@@ -4,13 +4,13 @@ using namespace std;
 
 int main() {
     // your code goes here
-    int T;
-    cin >> T;
+    int t;
+    cin >> t;
 
-    while (T--) {
-        int N, K;
-        cin >> N >> K;
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
 
-        cout << N + (N - 1) / (K - 1) << endl;
+        cout << n + (n - 1) / (k - 1) << endl;
     }
 }
