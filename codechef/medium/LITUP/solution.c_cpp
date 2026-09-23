@@ -23,7 +23,7 @@ int main() {
             }
         }
         if (ans == 1000000000)
-            cout << -1 << endl;
+            cout << "-1" << endl;
         else
             cout << ans << endl;
     }
