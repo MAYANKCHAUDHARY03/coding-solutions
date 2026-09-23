@@ -76,7 +76,7 @@ $5$ is the minimum cost needed to achieve this.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:24:50.418Z  
+**Submitted:** 2026-09-23T15:32:13.400Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -91,24 +91,28 @@ int T;
         int N, K;
         cin >> N >> K;
 
-        vector<int> C(N);
-        for (int i = 0; i < N; i++)
-            cin >> C[i];
+        int a[N];
 
-        int ans = 1e9;
+        for (int i = 0; i < N; i++)
+            cin >> a[i];
+
+        int ans = 1000000000;
 
         for (int i = 0; i < N; i++) {
             for (int j = i + 1; j < N; j++) {
-                if (i <= K && j >= N - K - 1 && j - i <= 2 * K + 1)
-                    ans = min(ans, C[i] + C[j]);
+                if (i <= K && j >= N - K - 1 && j <= i + 2 * K + 1) {
+                    if (a[i] + a[j] < ans)
+                        ans = a[i] + a[j];
+                }
             }
         }
 
-        if (ans == 1e9)
+        if (ans == 1000000000)
             cout << -1 << endl;
         else
             cout << ans << endl;
     }
+
 }
 
 ```
