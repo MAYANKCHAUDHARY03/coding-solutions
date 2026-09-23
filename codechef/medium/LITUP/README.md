@@ -76,45 +76,39 @@ $5$ is the minimum cost needed to achieve this.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:32:13.400Z  
+**Submitted:** 2026-09-23T15:33:38.394Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int T;
+    // your code goes here
+    int T;
     cin >> T;
 
     while (T--) {
-        int N, K;
-        cin >> N >> K;
-
-        int a[N];
-
-        for (int i = 0; i < N; i++)
+        int n, k;
+        cin >> n >> k;
+        int a[n];
+        for (int i = 0; i < n; i++)
             cin >> a[i];
-
         int ans = 1000000000;
-
-        for (int i = 0; i < N; i++) {
-            for (int j = i + 1; j < N; j++) {
-                if (i <= K && j >= N - K - 1 && j <= i + 2 * K + 1) {
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (i <= n && j >= n - k - 1 && j <= i + 2 * k + 1) {
                     if (a[i] + a[j] < ans)
                         ans = a[i] + a[j];
                 }
             }
         }
-
         if (ans == 1000000000)
             cout << -1 << endl;
         else
             cout << ans << endl;
     }
-
 }
-
 ```
 
 ---
