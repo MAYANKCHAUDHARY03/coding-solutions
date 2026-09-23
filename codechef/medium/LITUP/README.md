@@ -76,7 +76,7 @@ $5$ is the minimum cost needed to achieve this.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:33:12.399Z  
+**Submitted:** 2026-09-23T15:34:16.406Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -85,20 +85,16 @@ using namespace std;
 
 int main() {
     // your code goes here
-    int T;
-    cin >> T;
+    int t;
+    cin >> t;
 
-    while (T--) {
+    while (t--) {
         int n, k;
         cin >> n >> k;
-
         int a[n];
-
         for (int i = 0; i < n; i++)
             cin >> a[i];
-
         int ans = 1000000000;
-
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (i <= n && j >= n - k - 1 && j <= i + 2 * k + 1) {
@@ -107,13 +103,11 @@ int main() {
                 }
             }
         }
-
         if (ans == 1000000000)
             cout << -1 << endl;
         else
             cout << ans << endl;
     }
-
 }
 ```
 
