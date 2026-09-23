@@ -76,7 +76,7 @@ $5$ is the minimum cost needed to achieve this.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:34:16.406Z  
+**Submitted:** 2026-09-23T15:35:15.642Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -104,7 +104,7 @@ int main() {
             }
         }
         if (ans == 1000000000)
-            cout << -1 << endl;
+            cout << "-1" << endl;
         else
             cout << ans << endl;
     }
