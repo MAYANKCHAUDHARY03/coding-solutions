@@ -76,7 +76,7 @@ $5$ is the minimum cost needed to achieve this.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:35:15.642Z  
+**Submitted:** 2026-09-23T15:44:06.437Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -97,7 +97,7 @@ int main() {
         int ans = 1000000000;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                if (i <= n && j >= n - k - 1 && j <= i + 2 * k + 1) {
+                if (i <= k && j >= n - k - 1 && j <= i + 2 * k + 1) {
                     if (a[i] + a[j] < ans)
                         ans = a[i] + a[j];
                 }
