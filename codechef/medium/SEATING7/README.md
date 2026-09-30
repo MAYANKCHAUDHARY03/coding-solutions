@@ -56,36 +56,36 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:04:33.072Z  
+**Submitted:** 2026-09-30T15:09:34.183Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-while(t--){
-    int n,m,k;
-    cin>>n>>m>>k;
-    int a[n+1]={};
-    for(int i=0;i<m;i++){
-        int x;
-        cin>>x;
-        a[x]=1;
-    }
-    int x=1;
-    while(k--){
-        while(a[x]){
-            x++;
+    // your code goes here
+    int t;
+    while (t--) {
+        int n, m, k;
+        cin >> n >> m >> k;
+        bool a[105] = {};
+        for (int i = 0; i < m; i++) {
+            int x;
+            cin >> x;
+            a[x] = true;
         }
-        cout<<x<<" ";
-        a[x]=1;
+        int x = 1;
+        for(int i=0;i<k;i++) {
+            while (a[x]) 
+                x++;
+            
+            cout << x << " ";
+            a[x] = 1;
+        }
+        cout << endl;
     }
-    cout<<endl;
 }
-}
-
 ```
 
 ---
