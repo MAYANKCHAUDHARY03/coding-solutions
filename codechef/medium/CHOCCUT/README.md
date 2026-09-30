@@ -54,28 +54,28 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:57:48.672Z  
+**Submitted:** 2026-09-30T14:58:13.138Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-while(t--){
-    int n,m;
-    cin>>n>>m;
-    if(m%2==0){
-        cout<<"yes\n";
-    }
-    else{
-        cout<<"no\n";
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, m;
+        cin >> n >> m;
+        if (m % 2 == 0) {
+            cout << "YES\n";
+        }
+        else {
+            cout << "NO\n";
+        }
     }
 }
-}
-
 ```
 
 ---
