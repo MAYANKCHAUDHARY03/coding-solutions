@@ -57,37 +57,19 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:52:23.428Z  
+**Submitted:** 2026-09-30T14:55:11.428Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int b,h,c;
-cin>>b>>h>>c;
-if(h>=c){
-    if(c>b/2){
-        cout<<b/2;
-    }
-    else{
-        cout<<c;
-    }
+    // your code goes here
+    int b, h, c;
+    cin >> b >> h >> c;
+    cout<< min(b/2, h+c);
 }
-else if(c>=h){
-    if(h>b/2){
-        cout<<b/2;
-    }
-    else{
-        cout<<h;
-    }
-}
-else{
-    cout<<b/2;
-}
-}
-
 ```
 
 ---
