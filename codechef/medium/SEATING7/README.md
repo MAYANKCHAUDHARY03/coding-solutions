@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:09:34.183Z  
+**Submitted:** 2026-09-30T15:15:26.304Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -66,6 +66,7 @@ using namespace std;
 int main() {
     // your code goes here
     int t;
+    cin>>t;
     while (t--) {
         int n, m, k;
         cin >> n >> m >> k;
@@ -76,12 +77,11 @@ int main() {
             a[x] = true;
         }
         int x = 1;
-        for(int i=0;i<k;i++) {
-            while (a[x]) 
+        for (int i = 0; i < k; i++) {
+            while (a[x])
                 x++;
-            
             cout << x << " ";
-            a[x] = 1;
+            a[x] = true;
         }
         cout << endl;
     }
