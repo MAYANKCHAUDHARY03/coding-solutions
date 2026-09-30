@@ -58,30 +58,30 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:20:06.888Z  
+**Submitted:** 2026-09-30T15:21:02.798Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-while(t--){
-    int n;
-    cin>>n;
-    int a[400005]={}, max=0;
-    for(int i=1;i<=n;i++){
-        int x;
-        cin>>x;
-        a[x-i+n]++;
-        max=max(max,a[x-i+n]);
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        int a[400005] = {}, big = 0;
+        for (int i = 1; i <= n; i++) {
+            int x;
+            cin >> x;
+            a[x - i + n]++;
+            big = max(big, a[x - i + n]);
+        }
+        cout << n - big << endl;
     }
-    cout<<n-max<<endl;
 }
-}
-
 ```
 
 ---
