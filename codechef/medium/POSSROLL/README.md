@@ -67,16 +67,15 @@ The die has $4$ faces, numbered $3, 6, 9, 12$. Since $15$ is not one of these fa
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:28:10.472Z  
+**Submitted:** 2026-10-07T15:28:20.316Z  
 
 ```py
-# cook your dish here
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    int x, k, y;
-    cin >> x >> k >> y;
-    if (y % k == 0 && y / k >= 1 && y / k <= x)
+    int X, K, Y;
+    cin >> X >> K >> Y;
+    if (Y % K == 0 && Y / K >= 1 && Y / K <= X)
         cout << "YES";
     else
         cout << "NO";
