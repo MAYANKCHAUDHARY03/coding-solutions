@@ -1,10 +1,9 @@
-# cook your dish here
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    int x, k, y;
-    cin >> x >> k >> y;
-    if (y % k == 0 && y / k >= 1 && y / k <= x)
+    int X, K, Y;
+    cin >> X >> K >> Y;
+    if (Y % K == 0 && Y / K >= 1 && Y / K <= X)
         cout << "YES";
     else
         cout << "NO";
