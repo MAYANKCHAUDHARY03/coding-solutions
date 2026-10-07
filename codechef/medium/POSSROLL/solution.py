@@ -1,0 +1,12 @@
+# cook your dish here
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int x, k, y;
+    cin >> x >> k >> y;
+    if (y % k == 0 && y / k >= 1 && y / k <= x)
+        cout << "YES";
+    else
+        cout << "NO";
+    return 0;
+}
