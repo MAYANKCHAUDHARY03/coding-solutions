@@ -61,7 +61,7 @@ Test case $1$: Inviting the groups with $1$ and $2$ people gives $3$ people and 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T14:49:17.897Z  
+**Submitted:** 2026-10-21T14:48:22.399Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -80,12 +80,12 @@ int main() {
         sort(a, a + n);
         for (int i = 0; i < n; i++) {
             l += a[i];
-            if (l * (l - 1) / 2 > m) 
+            if (l * (l - 1) / 2 > m) {
                 break;
-                result++;
-            
+            result++;
+            }
         }
-        cout << result << endl;
+        cout << ans << endl;
     }
 }
 ```
