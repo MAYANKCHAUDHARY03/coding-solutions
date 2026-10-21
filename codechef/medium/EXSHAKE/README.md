@@ -61,31 +61,32 @@ Test case $1$: Inviting the groups with $1$ and $2$ people gives $3$ people and 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T14:47:25.906Z  
+**Submitted:** 2026-10-21T14:48:04.294Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-while(t--){
-    int n, m, l = 0, result = 0;
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, m, l = 0, result = 0;
         cin >> n >> m;
         int a[n];
         for (int i = 0; i < n; i++) cin >> a[i];
         sort(a, a + n);
         for (int i = 0; i < n; i++) {
             l += a[i];
-            if (l * (l - 1) / 2 > m) break;
+            if (l * (l - 1) / 2 > m){
+                break};
             result++;
         }
         cout << ans << endl;
+    }
 }
-}
-
 ```
 
 ---
