@@ -53,7 +53,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T14:55:05.507Z  
+**Submitted:** 2026-10-21T14:56:29.529Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -61,7 +61,31 @@ using namespace std;
 
 int main() {
 	// your code goes here
+int t;
+    cin >> t;
+    while (t--) {
+        long long n;
+        int d;
+        cin >> n >> d;
 
+        while (1) {
+            long long x = n;
+            int found = 0;
+
+            while (x > 0) {
+                if (x % 10 == d) {
+                    found = 1;
+                    break;
+                }
+                x /= 10;
+            }
+
+            if (found == 0) break;
+            n++;
+        }
+
+        cout << n << endl;
+    }
 }
 
 ```
