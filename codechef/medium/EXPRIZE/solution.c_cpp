@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        long long n, l = 0, r = 2000000;
+        cin >> n;
+
+        while (l < r) {
+            long long m = (l + r + 1) / 2;
+
+            if ((m * m * m + 5 * m) / 6 <= n)
+                l = m;
+            else
+                r = m - 1;
+        }
+
+        cout << l << endl;
+    }
+}
