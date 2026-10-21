@@ -53,7 +53,7 @@ Test case $1$: $14 = 1 + 2 + 4 + 7$ uses $K = 4$.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:09:18.269Z  
+**Submitted:** 2026-10-21T15:09:37.721Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -61,22 +61,22 @@ Test case $1$: $14 = 1 + 2 + 4 + 7$ uses $K = 4$.
 using namespace std;
 
 int main() {
-    // your code goes here
-    int t;
-    cin >> t;
-    while (t--) {
-        long long n, l = 0, r = 2000000;
-        cin >> n;
-        while (l < r) {
-            long long m = (l + r + 1) / 2;
-            if ((m * m * m + 5 * m) / 6 <= n)
-                l = m;
-            else
-                r = m - 1;
+        // your code goes here
+        int t;
+        cin >> t;
+        while (t--) {
+            long long n, l = 0, r = 2000000;
+            cin >> n;
+            while (l < r) {
+                long long m = (l + r + 1) / 2;
+                if ((m * m * m + 5 * m) / 6 <= n)
+                    l = m;
+                else
+                    r = m - 1;
+            }
+            cout << l << endl;
         }
-        cout << l << endl;
-    }
-
+}
 ```
 
 ---
