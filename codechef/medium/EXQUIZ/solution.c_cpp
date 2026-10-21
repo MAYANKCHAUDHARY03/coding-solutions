@@ -12,10 +12,10 @@ int main() {
         cin >> n >> s;
 
         for (int c = 0; c <= n; c++) {
-            int a = 4 * c - s;
+            int w = 4 * c - s;
 
-            if (a >= 0 && c + a <= n) {
-                ans = c + a;
+            if (w >= 0 && c + w <= n) {
+                ans = c + w;
                 break;
             }
         }
