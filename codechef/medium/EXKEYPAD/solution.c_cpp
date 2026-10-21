@@ -9,13 +9,13 @@ int main() {
 
     while (t--) {
         long long n;
-        int a;
-        cin >> n >> a;
+        int d;
+        cin >> n >> d;
         while (1) {
             long long x = n;
             int b = 0;
             while (x > 0) {
-                if (x % 10 == a) {
+                if (x % 10 == d) {
                     b = 1;
                     break;
                 }
