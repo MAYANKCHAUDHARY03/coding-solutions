@@ -53,7 +53,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:03:08.729Z  
+**Submitted:** 2026-10-21T14:57:06.009Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -64,25 +64,27 @@ int main() {
     // your code goes here
     int t;
     cin >> t;
-
     while (t--) {
         long long n;
         int d;
         cin >> n >> d;
+
         while (1) {
             long long x = n;
-            int b = 0;
+            int found = 0;
+
             while (x > 0) {
                 if (x % 10 == d) {
-                    b = 1;
+                    found = 1;
                     break;
                 }
                 x /= 10;
             }
-            if (b == 0)
-                break;
+
+            if (found == 0) break;
             n++;
         }
+
         cout << n << endl;
     }
 }
