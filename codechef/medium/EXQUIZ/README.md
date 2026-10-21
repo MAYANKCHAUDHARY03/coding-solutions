@@ -57,15 +57,16 @@ Test case $4$: Since the final score is $0$, all questions can be skipped.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T14:51:58.856Z  
+**Submitted:** 2026-10-21T14:52:15.842Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
+    // your code goes here
+    int t;
     cin >> t;
     while (t--) {
         int n, s;
@@ -79,7 +80,6 @@ int t;
             cout << s / 4 + 1 << endl;
     }
 }
-
 ```
 
 ---
