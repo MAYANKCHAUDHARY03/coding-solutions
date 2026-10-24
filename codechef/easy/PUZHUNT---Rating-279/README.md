@@ -82,7 +82,7 @@ So, Chef's team can participate in the event.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-24T12:10:17.184Z  
+**Submitted:** 2026-10-24T12:12:10.631Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -93,7 +93,7 @@ int main() {
     // your code goes here
     int n;
     cin >> n;
-    if (n > 5) {
+    if (n % 6 == 0 || n % 7 == 0 || n % 8 == 0) {
         cout << "YES";
     }
     else {
