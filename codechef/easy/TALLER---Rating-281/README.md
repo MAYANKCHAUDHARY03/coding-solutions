@@ -49,28 +49,28 @@ A
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-24T12:20:41.692Z  
+**Submitted:** 2026-10-24T12:21:10.866Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-while(t--){
-    int x,y;
-    cin>>x>>y;
-    if(x>y){
-        cout<<"B\n";
-    }
-    else{
-        cout<<"A\n";
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int x, y;
+        cin >> x >> y;
+        if (x > y) {
+            cout << "A\n";
+        }
+        else {
+            cout << "B\n";
+        }
     }
 }
-}
-
 ```
 
 ---
