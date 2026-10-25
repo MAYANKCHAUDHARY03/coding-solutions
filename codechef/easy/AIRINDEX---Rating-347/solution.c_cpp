@@ -4,11 +4,12 @@ using namespace std;
 
 int main() {
     // your code goes here
-    int t;
-    cin >> t;
-    while (t--) {
-        int g, b;
-        cin >> g >> b;
-        cout << b - g << endl;
+    int x;
+    cin >> x;
+    if (x < 101) {
+        cout << "YES\n";
+    }
+    else {
+        cout << "NO\n";
     }
 }
