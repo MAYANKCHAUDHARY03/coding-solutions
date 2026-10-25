@@ -96,7 +96,7 @@ The AQI is greater than $100$. Thus, the government was not able to keep the AQI
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T11:34:08.920Z  
+**Submitted:** 2026-10-25T11:35:13.517Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -107,7 +107,7 @@ int main() {
     // your code goes here
     int x;
     cin >> x;
-    if (x < 101) {
+    if (x < 100) {
         cout << "YES\n";
     }
     else {
