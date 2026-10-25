@@ -4,59 +4,57 @@
 
 ## Problem
 
-### Fever
+### Sleep deprivation
 
-Chef is not feeling well today. He measured his body temperature using a thermometer and it came out to be $X$ °F.
+A person is said to be sleep deprived if he slept  **strictly less than**  $7$ hours in a day.
 
-A person is said to have fever if his body temperature is  **strictly greater**  than $98$ °F.
-
-Determine if Chef has fever or not.
+Chef was only able to sleep $X$ hours yesterday. Determine if he is sleep deprived or not.
 
 ### Input Format
 - The first line contains a single integer $T$ — the number of test cases. Then the test cases follow.
-- The first and only line of each test case contains one integer $X$ - the body temperature of Chef in °F.
+- The first and only line of each test case contains one integer $X$ — the number of hours Chef slept.
 ### Output Format
 
-For each test case, output `YES` if Chef has fever. Otherwise, output `NO`.
+For each test case, output `YES` if Chef is sleep-deprived. Otherwise, output `NO`.
 
 You may print each character of `YES` and `NO` in uppercase or lowercase (for example, `yes`, `yEs`, `Yes` will be considered identical).
 
 ### Constraints
-- $1 \le T \le 10$
-- $94 \le X \le 103$
+- $1 \leq T \leq 20$
+- $1 \le X \le 15$
 ### Sample 1:
 Input
 Output
 
 ```
 3
-98
-100
-96
+4
+7
+10
 
 ```
 
 ```
-NO
 YES
+NO
 NO
 
 ```
 
 ### Explanation:
 
- **Test Case 1** : Since $X = 98$ is not greater than $98$, Chef does not have fever.
+ **Test Case 1:**  Since $4 \lt 7$, Chef is sleep deprived.
 
- **Test Case 2** : Since $X = 100$ is greater than $98$, Chef has fever.
+ **Test Case 2:**  Since $7 \ge 7$, Chef is not sleep deprived.
 
- **Test Case 3** : Since $X = 96$ is not greater than $98$, Chef does not have fever.
+ **Test Case 3:**  Since $10 \ge 7$, Chef is not sleep deprived.
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T11:43:43.786Z  
+**Submitted:** 2026-10-25T11:45:41.447Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,7 +68,7 @@ int main() {
     while (t--) {
         int x;
         cin >> x;
-        if (x > 98) {
+        if (x < 7) {
             cout << "YES\n";
         }
         else {
