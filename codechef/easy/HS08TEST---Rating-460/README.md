@@ -77,7 +77,7 @@ Example - Insufficient Funds
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T06:52:04.564Z  
+**Submitted:** 2026-10-26T06:52:45.468Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -90,7 +90,7 @@ int main() {
     cin >> x;
     float y;
     cin >> y;
-    if (x > y) {
+    if (x + 0.5 > y) {
         cout << y;
     }
     else {
