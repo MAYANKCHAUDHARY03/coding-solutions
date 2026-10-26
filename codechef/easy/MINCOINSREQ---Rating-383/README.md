@@ -1,0 +1,35 @@
+# MINCOINSREQ - Rating 383
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+_Description not available._
+
+## Solution
+
+**Language:** c_cpp  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-10-26T05:14:49.255Z  
+
+```c_cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, m, x;
+        cin >> n >> m >> x;
+        cout << 2 * (n + m) * x << endl;
+    }
+}
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/MINCOINSREQ)
