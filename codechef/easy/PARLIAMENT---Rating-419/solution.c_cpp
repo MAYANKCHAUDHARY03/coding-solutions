@@ -7,8 +7,13 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        int k, x;
-        cin >> k >> x;
-        cout << k - x << endl;
+        int n, x;
+        cin >> n >> x;
+        if (2 * x >= n) {
+            cout << "YES\n";
+        }
+        else {
+            cout << "NO\n";
+        }
     }
 }
