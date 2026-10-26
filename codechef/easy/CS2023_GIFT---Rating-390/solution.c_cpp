@@ -4,19 +4,12 @@ using namespace std;
 
 int main() {
     // your code goes here
-    int t;
-    cin >> t;
-    while (t--) {
-        int x;
-        cin >> x;
-        if (x < 4) {
-            cout << "MILD\n";
-        }
-        else if (x > 6) {
-            cout << "HOT\n";
-        }
-        else {
-            cout << "MEDIUM\n";
-        }
+    int x, n, m;
+    cin >> x >> n >> m;
+    if (x + m >= n) {
+        cout << "YES\n";
+    }
+    else {
+        cout << "NO\n";
     }
 }
