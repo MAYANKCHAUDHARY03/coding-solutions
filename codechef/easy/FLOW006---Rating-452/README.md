@@ -1,0 +1,35 @@
+# FLOW006 - Rating 452
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+_Description not available._
+
+## Solution
+
+**Language:** c_cpp  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-10-27T04:32:54.563Z  
+
+```c_cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, m;
+        cin >> n >> m;
+        cout << n * 2 + m * 4 << endl;
+    }
+}
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/FLOW006)
