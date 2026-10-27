@@ -101,7 +101,7 @@ Chef was not able to solve at least $10$ problems in any of the four weeks. Henc
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-27T05:30:24.261Z  
+**Submitted:** 2026-10-27T05:31:38.276Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -112,19 +112,9 @@ int main() {
     // your code goes here
     int a, b, c, d, count = 0;
     cin >> a >> b >> c >> d;
-    if (a > 9) {
-        count++;
+    if (a > 9&&b>9&&c>9&&d>9){
+     cout<<"4\n";   
     }
-    if (b > 9) {
-        count++;
-    }
-    if (c > 9) {
-        count++;
-    }
-    if (d > 0) {
-        count++;
-    }
-    cout << count;
 }
 ```
 
