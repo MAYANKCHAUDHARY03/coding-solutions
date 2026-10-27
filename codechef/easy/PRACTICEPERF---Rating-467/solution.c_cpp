@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    // your code goes here
+    int a, b, c, d, count = 0;
+    cin >> a >> b >> c >> d;
+    if (a > 9) {
+        count++;
+    }
+    if (b > 9) {
+        count++;
+    }
+    if (c > 9) {
+        count++;
+    }
+    if (d > 0) {
+        count++;
+    }
+    cout << count;
+}
