@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T07:28:24.708Z  
+**Submitted:** 2026-10-28T07:32:09.888Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,7 +71,7 @@ int main() {
         if (z < x) {
             cout << "0\n";
         }
-        else if (z > x && z < x + y) {
+        else if (z < x + y) {
             cout << "1\n";
         }
         else {
