@@ -4,14 +4,59 @@
 
 ## Problem
 
-_Description not available._
+### Best Coupon
+
+Chef is ordering food online (instead of cooking) and the bill comes out to be Rs. $X$. Chef can use one of the following two coupons to avail a discount.
+
+- Get $10$ percent off on the bill amount
+- Get a flat discount of Rs. $100$ on the bill amount
+
+What is the maximum discount Chef can avail?
+
+### Input Format
+- The first line contains a single integer $T$ - the number of test cases. Then the test cases follow.
+- The first and only line of each test case contains a single integer $X$ - the bill amount before discount.
+### Output Format
+
+For each testcase, output the maximum discount Chef can avail.
+
+### Constraints
+- $1 \leq T \leq 100$
+- $100 \leq X \leq 10000$
+- $X$ is a multiple of $100$.
+### Sample 1:
+Input
+Output
+
+```
+3
+300
+1300
+1000
+
+```
+
+```
+100
+130
+100
+
+```
+
+### Explanation:
+
+ **Test case 1:**  Using the second coupon, Chef can get a flat discount of Rs. $100$, which is maximum.
+
+ **Test case 2:**  Using the first coupon, Chef can get a $10$ percent discount of Rs. $130$, which is maximum.
+
+ **Test case 3:**  No matter which coupon Chef chooses Chef will get a discount of Rs. $100$.
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T07:32:14.092Z  
+**Submitted:** 2026-10-28T09:46:59.183Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -23,16 +68,13 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        int x, y, z;
-        cin >> x >> y >> z;
-        if (z < x) {
-            cout << "0\n";
-        }
-        else if (z < x + y) {
-            cout << "1\n";
+        int x;
+        cin >> x;
+        if (x <= 1000) {
+            cout << "100\n";
         }
         else {
-            cout << "2\n";
+            cout << x / 10 << endl;
         }
     }
 }
