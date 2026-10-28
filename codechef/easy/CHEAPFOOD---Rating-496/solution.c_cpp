@@ -7,16 +7,13 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        int x, y, z;
-        cin >> x >> y >> z;
-        if (z < x) {
-            cout << "0\n";
-        }
-        else if (z < x + y) {
-            cout << "1\n";
+        int x;
+        cin >> x;
+        if (x <= 1000) {
+            cout << "100\n";
         }
         else {
-            cout << "2\n";
+            cout << x / 10 << endl;
         }
     }
 }
