@@ -12,7 +12,7 @@ int main() {
         if (z < x) {
             cout << "0\n";
         }
-        else if (z > x && z < x + y) {
+        else if (z < x + y) {
             cout << "1\n";
         }
         else {
