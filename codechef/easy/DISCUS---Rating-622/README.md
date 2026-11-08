@@ -52,7 +52,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-08T07:34:06.137Z  
+**Submitted:** 2026-11-08T07:35:13.940Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -66,10 +66,10 @@ int main() {
     while (t--) {
         int a, b, c;
         cin >> a >> b >> c;
-        if (a > b && a > c) {
+        if (a >= b && a >= c) {
             cout << a << endl;
         }
-        else if (b > a && b > c) {
+        else if (b >= a && b >= c) {
             cout << b << endl;
         }
         else {
