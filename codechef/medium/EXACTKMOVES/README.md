@@ -60,7 +60,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:37:42.699Z  
+**Submitted:** 2026-11-25T14:38:43.994Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,15 +71,18 @@ int main() {
     // your code goes here
     int t;
     cin >> t;
-    while(t--){
-    int n, k;
-    cin >> n >> k;
-    if (2 * k >= n) {
-        cout << "YES\n";
-    }
-    else {
-        cout << "NO\n";
-    }
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
+        if(k>n){
+            cout<<"NO\n";
+        }
+        if (2 * k >= n) {
+            cout << "YES\n";
+        }
+        else {
+            cout << "NO\n";
+        }
     }
 }
 ```
