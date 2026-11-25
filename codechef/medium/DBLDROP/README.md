@@ -66,17 +66,46 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:49:36.476Z  
+**Submitted:** 2026-11-25T14:49:40.457Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int t;
+    cin >> t;
 
+    while (t--) {
+        int n;
+        cin >> n;
+
+        long long a[5005], sum = 0, ans = 0;
+
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+            sum += a[i];
+        }
+
+        for (int i = 0; i < n; i++) {
+            a[i] *= 2;
+
+            long long s = 0, mx = 0;
+
+            for (int j = 0; j < n; j++) {
+                s += a[j];
+                mx = max(mx, a[j]);
+            }
+
+            ans = max(ans, s - mx);
+            a[i] /= 2;
+        }
+
+        cout << ans << endl;
+    }
+
+    return 0;
 }
-
 ```
 
 ---
