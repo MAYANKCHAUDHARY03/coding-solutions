@@ -60,7 +60,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:39:23.312Z  
+**Submitted:** 2026-11-25T14:43:50.922Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -75,12 +75,13 @@ int main() {
         int n, k;
         cin >> n >> k;
         if (k > n) {
-        if (2 * k >= n) {
+            cout << "NO\n";
+        }
+        else if (2 * k >= n) {
             cout << "YES\n";
         }
         else {
             cout << "NO\n";
-        }
         }
     }
 }
