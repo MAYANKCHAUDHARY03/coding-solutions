@@ -6,14 +6,17 @@ int main() {
     // your code goes here
     int t;
     cin >> t;
-    while(t--){
-    int n, k;
-    cin >> n >> k;
-    if (2 * k >= n) {
-        cout << "YES\n";
-    }
-    else {
-        cout << "NO\n";
-    }
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
+        if(k>n){
+            cout<<"NO\n";
+        }
+        if (2 * k >= n) {
+            cout << "YES\n";
+        }
+        else {
+            cout << "NO\n";
+        }
     }
 }
