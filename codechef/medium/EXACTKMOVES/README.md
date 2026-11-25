@@ -60,26 +60,28 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:37:04.595Z  
+**Submitted:** 2026-11-25T14:37:42.699Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	// your code goes here
-int t;
-cin>>t;
-int n,k;
-cin>>n>>k;
-if(2*k>=n){
-    cout<<"YES\n";
+    // your code goes here
+    int t;
+    cin >> t;
+    while(t--){
+    int n, k;
+    cin >> n >> k;
+    if (2 * k >= n) {
+        cout << "YES\n";
+    }
+    else {
+        cout << "NO\n";
+    }
+    }
 }
-else{
-    cout<<"NO\n";
-}
-}
-
 ```
 
 ---
