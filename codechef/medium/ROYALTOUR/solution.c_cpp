@@ -1,0 +1,39 @@
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        long long n, m, r, c;
+        cin >> n >> m >> r >> c;
+
+        vector<pair<long long, long long>> v = {
+            {1, 1}, {1, m}, {n, 1}, {n, m}
+        };
+
+        sort(v.begin(), v.end());
+
+        long long ans = LLONG_MAX;
+
+        do {
+            long long x = r, y = c, sum = 0;
+
+            for (auto p : v) {
+                sum += max(abs(x - p.first), abs(y - p.second));
+                x = p.first;
+                y = p.second;
+            }
+
+            ans = min(ans, sum);
+
+        } while (next_permutation(v.begin(), v.end()));
+
+        cout << ans << '\n';
+    }
+
+    return 0;
+}
+```
