@@ -64,13 +64,12 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:55:29.596Z  
+**Submitted:** 2026-11-25T14:55:50.104Z  
 
 ```c_cpp
-```cpp
 #include <bits/stdc++.h>
-using namespace std;
 
+using namespace std;
 int main() {
     int t;
     cin >> t;
@@ -78,12 +77,12 @@ int main() {
         long long n, m, r, c;
         cin >> n >> m >> r >> c;
         long long d = min({
-            max(r-1, c-1),
-            max(r-1, m-c),
-            max(n-r, c-1),
-            max(n-r, m-c)
+            max(r - 1, c - 1),
+            max(r - 1, m - c),
+            max(n - r, c - 1),
+            max(n - r, m - c)
         });
-        cout << d + n + m - 2 + min(n-1, m-1) << endl;
+        cout << d + n + m - 2 + min(n - 1, m - 1) << endl;
     }
 }
 ```
